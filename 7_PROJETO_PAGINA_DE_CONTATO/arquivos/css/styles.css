@@ -1,0 +1,175 @@
+/* GERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+/* CONTAINERS */
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* view height */
+}
+
+#address-container, #form-container {
+  flex: 1 1 0;
+  height: 100%;
+  text-align: left;
+}
+
+/* ADDRESS CONTAINER */
+
+#address-container {
+  background-image: url('../img/project_bg.jpg');
+  background-size: cover;
+  background-position-x: -130px;
+  color: #FFF;
+  position: relative;
+}
+
+.fade {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .7;
+}
+
+#address-content {
+  position: absolute;
+  top: 25vh;
+  left: 35%;
+  width: 300px;
+}
+
+#address-content h2 {
+  color: #00AD5E;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 40px;
+}
+
+#address-content ion-icon {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+#address-content p {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* FORM CONTAINER */
+#form-container {
+  padding-top: 60px;
+  text-align: center;
+}
+
+#form-container h2 {
+  color: #888;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+#contact-form {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#contact-form input,
+#contact-form label,
+#contact-form textarea {
+  display: block;
+  padding: 10px;
+  border: 1px solid #EEE;
+  width: 100%;
+  color: #AAA;
+}
+
+#contact-form label {
+  color: #999;
+  font-weight: bold;
+  border-bottom: none;
+}
+
+#contact-form input {
+  margin-bottom: 15px;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #BBB;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #00AD5E;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 300px;
+  margin: 30px auto;
+  border: 2px solid transparent;
+  transition: .5s;
+}
+
+#contact-form input[type="submit"]:hover {
+  border-color: #00AD5E;
+  color: #00AD5E;
+  background-color: #FFF;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 450px) {
+
+  #main-container {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  #form-container,
+  #address-container {
+    flex: 1 1 100%;
+  }
+
+  #form-container {
+    order: -1;
+    padding: 20px;
+  }
+
+  #form-container h2 {
+    margin-bottom: 25px;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  #contact-form input,
+  #contact-form label,
+  #contact-form textarea {
+    border-color: #AAA;
+  }
+
+  #address-container {
+    background-position: 0;
+    height: 500px;
+  }
+
+  .fade {
+    opacity: .9;
+  }
+
+  #address-content {
+    top: 25%;
+    left: 25%;
+  }
+
+}

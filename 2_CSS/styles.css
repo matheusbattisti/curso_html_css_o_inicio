@@ -1,0 +1,303 @@
+h1 {
+	color: red;
+}
+
+p {
+	color: blue;
+}
+
+h2 {
+	color: green;
+	text-align: center;
+	font-size: 50px;
+}
+
+/* Este é um comentário */
+
+/*
+	Este
+	é
+	um
+	comentário
+*/
+
+/* Classes e ids */
+
+.p-texto {
+	color: lightgreen;
+}
+
+#titulo-app {
+	color: purple;
+	font-size: 40px;
+}
+
+/* Especifidade */
+
+div p {
+	color: red;
+}
+
+.p-dentro-da-div {
+	color: blue;
+}
+
+#p-super-especifico {
+	color: green;
+}
+
+/* Cores */
+
+.nome {
+	color: orange;
+}
+
+.hexa {
+	color: #6a40c4;
+}
+
+.rgba {
+	color: rgba(17, 197, 214, 1);
+	font-size: 40px;
+}
+
+/* Backgrounds */
+
+.div-background {
+	background-image: url('img/por-do-sol.jpg');
+	height: 300px;
+}
+
+.titulo-background {
+	text-align: center;
+	background-color: #000;
+	color: #FFF;
+}
+
+/* Fontes */
+
+.family {
+	color: #000;
+	font-size: 40px;
+}
+
+.family.serif {
+	color: green;
+}
+
+.serif {
+	font-family: "times new roman";
+}
+
+.sans-serif {
+	font-family: arial;
+}
+
+.monospace {
+	font-family: "Courier New";
+}
+
+.italic {
+	font-style: italic;
+}
+
+.oblique {
+	font-style: oblique;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.variant {
+	font-variant: small-caps;
+}
+
+/* Box model */
+
+body {
+	margin: 0;
+}
+
+.boxmodel {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	/* geral */
+	/*padding: 20px;*/
+	/* especifico */
+	/*	
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	*/
+	/* especifico agrupado */
+	/* padding: 30px 20px 5px 10px; */
+	/* especifico agrupado 3 medidas - top, right-left, bottom */
+	/* padding: 30px 20px 5px; */
+	/* especifico agrupado 2 medidas - top -bottom, right - left */
+	padding: 30px 20px;
+	border: 3px solid #000;
+	border-width: 5px 10px 2px 10px;
+	/*border-left: 5px dotted blue;
+	border-right-style: double;*/
+	border-width: 20px 10px;
+	border-radius: 15px;
+/*	margin: 50px;
+	margin: 5px 10px 10px 7px;*/
+	margin: 100px;
+	/*display: none;*/
+/*	display: inline;
+	display: inline-block;*/
+	display: block;
+}
+
+.paragrafo-box {
+	color: #000;
+	margin: 0;
+}
+
+/* Positions */
+/* static - flow no HTML, não é alterado por top, left, right e bottom */
+/* relative - flow no HTML, ela é alterada pelo top, left, right e bottom */
+/* fixed - posiciona em qualquer lugar da tela, e é posicionada em relação ao HTML */
+/* absolute - posiciona em qualquer lugar, e ela respeita o elemento antecessor */
+/* sticky - esta no flow do HTML, porém ao passar o scroll ela funciona como fixed */
+
+.div-position {
+	width: 500px;
+	height: 500px;
+	background-color: red;
+	border-bottom: 2px dotted black;
+}
+
+.static {
+	position: static;
+}
+
+.relative {
+	position: relative;
+	background-color: blue;
+	top: 100px;
+	left: 50px;
+}
+
+
+.mini-div {
+	height: 50px;
+	width: 50px;
+	top: 50px;
+	left: 100px;
+}
+
+.absolute {
+	position: absolute;
+	background-color: purple;
+	right: 0;
+	top: 0;
+}
+
+
+
+.fixed {
+	position: fixed;
+	height: 200px;
+	background-color: yellow;
+	bottom: 0;
+	right: 0;
+}
+
+.sticky {
+	position: sticky;
+	background-color: gray;
+	top: 0px;
+}
+
+/* Float */
+
+.container {
+	padding: 50px;
+}
+
+.div-float {
+	overflow: auto;
+}
+
+.img-float {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.p-float {
+	color: #000;
+}
+
+.clear {
+	clear: both;
+}
+
+div p {
+	color: #000;
+}
+
+/* Units */
+
+.pixel-1 {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}
+
+.pixel-2 {
+	background-color: blue;
+	width: 500px;
+	height: 50px;
+}
+
+.pai-porcentagem {
+	height: 500px;
+	width: 500px;
+	background-color: #000;
+}
+
+.porcentagem-1 {
+	width: 50%;
+	height: 50%;
+	background-color: yellow;
+}
+
+.porcentagem-2 {
+	width: 50%;
+	height: 50%;
+	background-color: #000;
+}
+
+.pai-em {
+	font-size: 50px;
+}
+
+.em-1 {
+	width: .5em;
+	height: .5em;
+	background-color: purple;
+}
+
+html {
+	font-size: 20px;
+}
+
+.rem-1 {
+	width: 1rem;
+	height: 1rem;
+	background-color: blue;
+}
+
+.rem-2 {
+	font-size: 2rem;
+}
